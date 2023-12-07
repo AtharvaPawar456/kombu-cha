@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombu-Cha</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="font-sans bg-gray-100 w-full">
+
+    <!-- Navbar -->
+    <nav class="bg-green-700 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Brand Name -->
+            <div class="flex items-center space-x-2">
+                <img src="static\images\logo.png" alt="Logo" class="w-36 h-12 rounded-xl">
+                <!-- <span class="text-white text-xl font-semibold"></span> -->
+            </div>
+
+            <!-- English Navbar Tabs -->
+            <div class="flex space-x-4" id="englishNavbar">
+                
+                <a onclick="showSection('eninfoSection')" 
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">Info</a>
+                
+                <a onclick="showSection('enresearchSection')" 
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">Research Papers</a>
+                
+                <a onclick="showSection('engallerySection')" 
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">Gallery</a>
+                
+                <a onclick="showSection('enbuynowSection')" 
+                    class="text-black text-xl font-bold px-2 hover:underline hover:border-black hover:bg-yellow-300 border bg-yellow-400 rounded-md">Buy Now</a>
+            </div>
+
+            <!-- Hindi Navbar Tabs -->
+            <div class="flex space-x-4 hidden" id="hindiNavbar">
+                
+                <a onclick="showSection('hiinfoSection')" 
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">जानकारी</a>
+                
+                <a onclick="showSection('hiresearchSection')" 
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">अनुसंधान पत्रिकाएं</a>
+                
+                <a onclick="showSection('higallerySection')" 
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">गैलरी</a>
+                
+                <a onclick="showSection('hibuynowSection')" 
+                    class="text-black text-xl font-bold px-2 hover:underline hover:border-black hover:bg-yellow-300 border bg-yellow-400 rounded-md">अब खरीदें</a>
+            </div>
+
+            <!-- Language Toggle Button -->
+            <div>
+                <button id="toggleLanguage" class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300 hover:shadow-xl">Change Language</button>
+                <span id="languageDisplay" class="ml-2 text-md text-yellow-300"></span>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="container mx-auto mt-2 p-4">
+        <!-- Add Hindi content here -->
+        <section id="englishSection" class="hidden">
+            <!-- <h1 class="text-3xl text-center font-bold mb-4 mt-2">English Content Section</h1> -->
+
+            <!-- Sections for Info, Research, Gallery, and Buy Now content -->
+            <section id="eninfoSection" class="text-xl mx-20">
+                <h1 class="text-3xl text-center font-bold mb-4 py-6">Kombucha: The Ancient, Health-Bringing Elixir</h1>
+                <!-- Add English Info content here -->
+                
+                <div>
+                    <div class="grid grid-cols-5 gap-4 my-10">
+
+                        <div class="col-span-4 p-4 mx-10 text-2xl text-justify">
+                            Kombucha is a fermented tea drink that has been consumed for over 2,000 years for its unique flavor and extensive health benefits. This probiotic beverage originates from East Asia and contains antioxidants, nutrients, and raw organic acids that can boost immunity, improve digestion, alleviate inflammation, and more. Read on to learn about kombucha's origins, preparation, health effects, and why it deserves a place in your diet.
+                        </div>
+                        <div class="p-4 mx-auto my-auto border border-gray-500 border-2 rounded-xl shadow-md">
+                            <img src="static\images\kombucha.png" alt="image" class="h-auto  border rounded-xl shadow-md">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-5 gap-4">
+
+                        <div class="p-4 mx-auto my-auto border border-gray-500 border-2 rounded-xl shadow-md">
+                            <img src="static\images\info-imgs\kombu-cha-history-image--620152437.png" alt="history" class="h-auto  border rounded-xl shadow-md">
+                        </div>
+                        <div class="col-span-4 p-4 mr-10 text-justify">                          
+                            <div class="my-4 font-bold">Origins and History:</div>
+                            The first recorded uses of kombucha date back to 220 B.C. in Northeast China, where the tea fermentation process is believed to have been discovered by accident. As sweetened tea was left to ferment over long periods, people noticed it developed digestive and energizing properties. Over centuries, the practice spread across East Asia and Russia and was prized for promoting longevity and wellness. Today, a global community creates their own kombucha at home or enjoys it commercially.
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-5 gap-4 my-10">
+
+                        <div class="col-span-4 p-4 mx-10 text-2xl text-justify">
+                            <div class="my-4 font-bold">Why Consume Kombucha?</div>
+                            Modern research reinforces traditional beliefs in kombucha’s wide-ranging therapeutic effects. By supporting gut, immune, metabolic and cellular health, kombucha can help tackle various health issues. Here are some top reasons to add this probiotic tea to your routine:
+                        </div>
+                        <div class="p-4 mx-auto my-auto border border-gray-500 border-2 rounded-xl shadow-md">
+                            <img src="static\images\kombucha.png" alt="kombucha image" class="h-auto  border rounded-xl shadow-md">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="my-4 font-bold text-4xl text-center">Kombucha Benefits for Your Health</div>
+                        
+                        <div class="grid grid-cols-5 gap-4 text-justify">
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Boosts gut health (1).jpeg" alt="image" 
+                                     class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto">
+                                <div class="font-bold ">Boosts gut health</div>
+                                <div class="text-sm">
+                                    Contains probiotics to optimize digestion, nutrient absorption, and immunity
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\detoxifies-the-body-maleimage-more-positive-way-902119840.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto">
+                                <div class="font-bold">Detoxifies the body</div>
+                                <div class="text-sm">
+                                    Liver-supportive acids promote natural detoxification
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\manages-inflammation.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold">Manages Inflammation</div>
+                                <div class="text-sm">
+                                    Powerful antioxidants combat inflammatory conditions
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Supports mental health.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold">Supports mental health</div>
+                                <div class="text-sm">
+                                    Impacts gut-brain axis and stress responses
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Aids weight loss.jpeg" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold">Aids weight loss</div>
+                                <div class="text-sm">
+                                    Promotes fullness, balances blood sugar, and boosts metabolism
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Prevents disease.jpeg" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold">Prevents disease</div>
+                                <div class="text-sm">
+                                    Antimicrobial and anti-cancer properties protect overall health
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Slows aging (1).jpeg" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold">Slows aging</div>
+                                <div class="text-sm">
+                                    Antioxidants reduce effects of aging at the cellular level
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\man-is-allergies-freemodulates-immune-responses-for-alleviation-of-allergy-symptoms-570661470.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold">Eases allergies</div>
+                                <div class="text-sm">
+                                    Modulates immune responses for alleviation of allergy symptoms
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\heart health.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold">Supports heart health</div>
+                                <div class="text-sm">
+                                    Reduces blood pressure and balances cholesterol levels
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Type 2 Diabetes.jpeg" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold">Aid in Type 2 Diabetes Management</div>
+                                <div class="text-sm">
+                                    Reduces blood pressure and balances cholesterol levels
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 p-4 text-2xl text-justify">
+                            As a functional drink brimming with probiotics, nutrients, and antioxidants, kombucha confers an astounding range of health benefits. Science continues to reinforce traditional claims about improved immunity, reduced inflammation, disease prevention, and more. So raise a glass to this ancient but timeless elixir for boosting your overall wellness!
+                        </div>
+
+                    </div>
+                </div>
+                        
+                <!-- <div>about : about data</div> -->
+                <!-- <div>usage : usage data</div> -->
+                <!-- <div>benifits : benifits data</div> -->
+                
+            </section>
+
+
+
+
+
+
+
+            <section id="enresearchSection" class="hidden">
+                <h1 class="text-3xl font-bold mb-4">Research Papers Section (English)</h1>
+                <!-- Add English Research Papers content here -->
+            </section>
+
+            <section id="engallerySection" class="hidden">
+                <h1 class="text-3xl font-bold mb-4">Gallery Section (English)</h1>
+                <!-- Add English Gallery content here -->
+            </section>
+
+            <section id="enbuynowSection" class="hidden">
+                <h1 class="text-3xl font-bold mb-4">Buy Now Section (English)</h1>
+                <!-- Add English Buy Now content here -->
+            </section>
+
+        </section>
+
+        <!-- Add Hindi content here -->
+        <section id="hindiSection" class="hidden">
+            <!-- <h1 class="text-3xl font-bold mb-4 my-20">Hindi Content Section</h1> -->
+
+            <section id="hiinfoSection" class="mx-20">
+                <!-- <h1 class="text-3xl font-bold mb-4">जानकारी खंड (हिन्दी)</h1> -->
+                <!-- Add Hindi Info content here -->
+
+                <h1 class="text-3xl text-center font-bold mb-4 py-6">कोम्बुचा: प्राचीन, स्वास्थ्य लाभकारी अमृत</h1>
+                <!-- Add English Info content here -->
+                
+                <div>
+                    <div class="grid grid-cols-5 gap-4 my-10">
+
+                        <div class="col-span-4 p-4 mx-10 text-2xl text-justify">
+                            कोम्बुचा एक फरमेंटेड चाय का पेय है जिसे अद्वितीय स्वाद और विस्तृत स्वास्थ्य लाभ के लिए 2,000 साल से अधिक समय से सेवन किया जा रहा है। यह प्रोबायोटिक पेय पूर्वी एशिया से उत्पन्न हुआ है और इसमें एंटीऑक्सीडेंट्स, पोषण और कच्चे कार्बनिक एसिड हैं जो प्रतिरक्षा बढ़ा सकते हैं, पाचन को सुधार सकते हैं, सूजन को कम कर सकते हैं, और इसके अलावा भी कई लाभ हो सकते हैं। आइए जानें कोम्बुचा के उत्पत्ति, तैयारी, स्वास्थ्य प्रभाव, और यह आपके आहार में जगह पाने के लिए क्यों योग्य है।
+                        </div>
+                        <div class="p-4 mx-auto my-auto border border-gray-500 border-2 rounded-xl shadow-md">
+                            <img src="static\images\kombucha.png" alt="image" class="h-auto  border rounded-xl shadow-md">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-5 gap-4">
+
+                        <div class="p-4 mx-auto my-auto border border-gray-500 border-2 rounded-xl shadow-md">
+                            <img src="static\images\info-imgs\kombu-cha-history-image--620152437.png" alt="history" class="h-auto  border rounded-xl shadow-md">
+                        </div>
+                        <div class="col-span-4 p-4 mr-10 text-2xl text-justify">                          
+                            <div class="my-4 font-bold">उत्पत्ति और इतिहास</div>
+                            कोम्बुचा के पहले रिकॉर्डेड उपयोग 220 ईसा पूर्व नॉर्थईस्ट चीन में हुआ था, जहां चाय की साइक्ल रोकने की प्रक्रिया का आपदान से माना जाता है। जब डीलीट चाय को लंबे समय तक फरमेंट करने दिया गया, तो लोगों ने देखा कि इसमें पाचन और ऊर्जा बढ़ी होती है। सदियों के बाद, यह अभ्यास पूरे पूर्वी एशिया और रशिया में फैल गया और इसे दीर्घायु और स्वस्थता को बढ़ावा देने के लिए प्रशंसा मिली। आज, एक वैश्विक समुदाय अपने घर पर खुद कोम्बुचा बनाता है या इसे व्यापारिक रूप से आनंदित करता है।
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-5 gap-4 my-10">
+
+                        <div class="col-span-4 p-4 mx-10 text-2xl text-justify">
+                            <div class="my-4 font-bold">क्यों सेवन करें कोम्बुचा?                             </div>
+                            आधुनिक अनुसंधान ने कोम्बुचा के व्यापक चिकित्सात्मक प्रभावों में पारंपरिक विश्वासों को मजबूती दी है। पाचन, प्रतिरक्षा, उपाषु प्रणाली और कोशिकाओं के स्वास्थ्य का समर्थन करके कोम्बुचा विभिन्न स्वास्थ्य समस्याओं का सामना करने में मदद कर सकता है। यहां इस प्रोबायोटिक चाय को आपकी दिनचर्या में शामिल करने के लिए कुछ मुख्य कारण हैं:
+                        </div>
+                        <div class="p-4 mx-auto my-auto border border-gray-500 border-2 rounded-xl shadow-md">
+                            <img src="static\images\kombucha.png" alt="kombucha image" class="h-auto  border rounded-xl shadow-md">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="my-4 font-bold text-4xl text-center">कोम्बुचा आपके स्वास्थ्य के लिए लाभ</div>
+                        
+                        <div class="grid grid-cols-5 gap-4 text-justify">
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Boosts gut health (1).jpeg" alt="image" 
+                                     class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto">
+                                <div class="font-bold pt-4">पाचन स्वास्थ्य को बढ़ावा</div>
+                                <div class="text-sm">
+                                    पाचन, पोषण अवशेषण और प्रतिरक्षा को अच्छा बनाए रखने के लिए प्रोबायोटिक्स होते हैं
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\detoxifies-the-body-maleimage-more-positive-way-902119840.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto">
+                                <div class="font-bold pt-4">शरीर की स्वच्छीकरण</div>
+                                <div class="text-sm">
+                                    जिगर को समर्थन करने वाले एसिड नैसर्गिक शुद्धीकरण को बढ़ावा देते हैं
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\manages-inflammation.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold pt-4">सूजन का प्रबंधन</div>
+                                <div class="text-sm">
+                                    शक्तिशाली एंटीऑक्सीडेंट्स आपत्तिकारी स्थितियों से निपट सकते हैं
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Supports mental health.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold pt-4">मानसिक स्वास्थ्य का समर्थन</div>
+                                <div class="text-sm">
+                                    पाचन-मस्तिष्क सम्बंध और तनाव प्रतिक्रियाएँ में प्रभाव
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Aids weight loss.jpeg" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold pt-4">वजन घटाने में मदद</div>
+                                <div class="text-sm">
+                                    पूर्णता को बढ़ावा देने, रक्त शर्करा को संतुलित करने और चर्बी जलाने का समर्थन करने में मदद करता है
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Prevents disease.jpeg" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold pt-4">रोग की रोकथाम</div>
+                                <div class="text-sm">
+                                    एंटीमाइक्रोबियल और एंटी-कैंसर गुण पूरे स्वास्थ्य की सुरक्षा कर सकते हैं
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Slows aging (1).jpeg" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold pt-4">आगे की ओर बढ़ावा</div>
+                                <div class="text-sm">
+                                    एंटीऑक्सीडेंट्स कोशिकाओं के स्तर पर बूट करते हैं
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\man-is-allergies-freemodulates-immune-responses-for-alleviation-of-allergy-symptoms-570661470.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold pt-4">एलर्जी को आसानी से करना</div>
+                                <div class="text-sm">
+                                    एलर्जी के लक्षणों को कम करने के लिए प्रतिरक्षा प्रतिक्रियाएँ में सुधार
+                                </div>
+                            </div>
+
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\heart health.png" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold pt-4">हृदय स्वास्थ्य का समर्थन</div>
+                                <div class="text-sm">
+                                    रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                                <img src="static\images\info-imgs\Type 2 Diabetes.jpeg" alt="image" 
+                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                                <div class="font-bold pt-4">Type 2 डायबिटीज प्रबंधन में सहायक</div>
+                                <div class="text-sm">
+                                    रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="col-span-4 p-4 text-2xl text-justify">
+                            एक कार्यात्मक पेय के रूप में, जिसमें प्रोबायोटिक्स, पोषण और एंटीऑक्सीडेंट्स से भरपूर है, कोम्बुचा एक अद्भुत स्वास्थ्य लाभों के समृद्ध क्षेत्र का प्रदान करता है। विज्ञान ने स्वास्थ्य, कम सूजन, रोग निवारण, और बहुत तक में सुधार की पारंपरिक दावों को मजबूती दी है। इसलिए, इस प्राचीन परन्तु सदैव चिरपिंग अमृत के लिए अपने आप को समृद्धि के लिए एक कांच उठाएं!                        </div>
+                    </div>
+                </div>
+                        
+                <!-- <div>about : about data</div> -->
+                <!-- <div>usage : usage data</div> -->
+                <!-- <div>benifits : benifits data</div> -->
+                
+
+            </section>
+        
+            <section id="hiresearchSection" class="hidden">
+                <h1 class="text-3xl font-bold mb-4">अनुसंधान पत्रिकाएं खंड (हिन्दी)</h1>
+                <!-- Add Hindi Research Papers content here -->
+            </section>
+        
+            <section id="higallerySection" class="hidden">
+                <h1 class="text-3xl font-bold mb-4">गैलरी खंड (हिन्दी)</h1>
+                <!-- Add Hindi Gallery content here -->
+            </section>
+        
+            <section id="hibuynowSection" class="hidden">
+                <h1 class="text-3xl font-bold mb-4">अब खरीदें खंड (हिन्दी)</h1>
+                <!-- Add Hindi Buy Now content here -->
+            </section>
+        </section>
+
+
+    </section>
+
+    <!-- responsive code -->
+    <div>
+        <!-- Laptop View -->
+        <div class="hidden lg:block">
+            <!-- <p>This is the content for laptop view</p> -->
+        </div>
+        
+        <!-- Tablet View -->
+        <div class="hidden lg:hidden md:block">
+            <!-- <p>This is the content for tablet view</p> -->
+        </div>
+        
+        <!-- Mobile View -->
+        <div class="block lg:hidden md:hidden">
+            <!-- <p>This is the content for mobile view</p> -->
+        </div>
+    </div>
+
+
+    <script>
+        const toggleLanguageButton = document.getElementById('toggleLanguage');
+        const languageDisplay = document.getElementById('languageDisplay');
+        const hindiSection = document.getElementById('hindiSection');
+        const englishSection = document.getElementById('englishSection');
+
+        const englishNavbar = document.getElementById('englishNavbar');
+        const hindiNavbar = document.getElementById('hindiNavbar');
+
+        const sections = [
+            'eninfoSection', 'enresearchSection', 'engallerySection', 'enbuynowSection',
+            'hiinfoSection', 'hiresearchSection', 'higallerySection', 'hibuynowSection'
+        ];
+        
+        let currentLanguage = 'en'; // Default language is English
+
+        toggleLanguageButton.addEventListener('click', () => {
+            // Toggle between English and Hindi
+            currentLanguage = currentLanguage === 'en' ? 'hi' : 'en';
+            document.documentElement.lang = currentLanguage; // Change the HTML lang attribute
+            updateLanguageDisplay();
+            showHideSections();
+        });
+
+        // Function to update language display
+        function updateLanguageDisplay() {
+            languageDisplay.textContent = currentLanguage === 'en' ? 'English' : 'Hindi';
+        }
+
+        // Function to show/hide sections based on the selected language
+        function showHideSections() {
+            if (currentLanguage === 'en') {
+                englishSection.classList.remove('hidden');
+                englishNavbar.classList.remove('hidden');
+                hindiSection.classList.add('hidden');
+                hindiNavbar.classList.add('hidden');
+            } else {
+                englishSection.classList.add('hidden');
+                hindiSection.classList.remove('hidden');
+                englishNavbar.classList.add('hidden');
+                hindiNavbar.classList.remove('hidden');
+            }
+        }
+
+        // Function to show the selected section and hide others
+        // Function to show the selected section and hide others
+        function showSection(sectionId) {
+            currentSection = sectionId;
+            sections.forEach(section => {
+                const sectionElement = document.getElementById(section);
+                sectionElement.classList.toggle('hidden', section !== currentSection);
+            });
+        }
+
+        // Initial setup
+        updateLanguageDisplay();
+        showHideSections();
+        showSection(currentSection);
+
+    </script>
+
+
+    <script src="static/setup_files/tailwindcss.js"></script>
+</body>
+
+</html>

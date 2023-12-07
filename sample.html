@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombu-Cha</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-green-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Brand Name -->
+            <div class="flex items-center space-x-2">
+                <img src="logo.png" alt="Logo" class="w-8 h-8">
+                <span id="brandName" class="text-white text-xl font-semibold">Kombu-Cha</span>
+            </div>
+
+            <!-- Navbar Tabs -->
+            <div id="navbarTabs" class="flex space-x-4">
+                <a href="#" class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300"
+                    onclick="showSection('infoSection')">Info</a>
+                <a href="#" class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300"
+                    onclick="showSection('researchSection')">Research Papers</a>
+                <a href="#" class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300"
+                    onclick="showSection('gallerySection')">Gallery</a>
+                <a href="#"
+                    class="text-black text-xl font-bold px-2 hover:underline hover:border-black hover:bg-yellow-300 border bg-yellow-400 rounded-md"
+                    onclick="showSection('buyNowSection')">Buy Now</a>
+            </div>
+
+            <!-- Language Toggle Button and Display -->
+            <div class="flex items-center space-x-2">
+                <button id="toggleLanguage"
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300"
+                    onclick="toggleLanguage()">Change Language</button>
+                <span id="languageDisplay"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container mx-auto mt-8 p-4">
+        <!-- Sections for Info, Research, Gallery, and Buy Now content -->
+        <section id="infoSection" class="hidden">
+            <h1 class="text-3xl font-bold mb-4">Info Section</h1>
+            <!-- Add Info content here -->
+        </section>
+
+        <section id="researchSection" class="hidden">
+            <h1 class="text-3xl font-bold mb-4">Research Papers Section</h1>
+            <!-- Add Research Papers content here -->
+        </section>
+
+        <section id="gallerySection" class="hidden">
+            <h1 class="text-3xl font-bold mb-4">Gallery Section</h1>
+            <!-- Add Gallery content here -->
+        </section>
+
+        <section id="buyNowSection" class="hidden">
+            <h1 class="text-3xl font-bold mb-4">Buy Now Section</h1>
+            <!-- Add Buy Now content here -->
+        </section>
+    </div>
+
+    <script>
+        const languageDisplay = document.getElementById('languageDisplay');
+        const brandName = document.getElementById('brandName');
+        const navbarTabs = document.getElementById('navbarTabs');
+        const sections = ['infoSection', 'researchSection', 'gallerySection', 'buyNowSection'];
+        let currentLanguage = 'en'; // Default language is English
+        let currentSection = 'infoSection'; // Default section is Info
+
+        function toggleLanguage() {
+            // Toggle between English and Hindi
+            currentLanguage = currentLanguage === 'en' ? 'hi' : 'en';
+            document.documentElement.lang = currentLanguage; // Change the HTML lang attribute
+            updateLanguageDisplay();
+            updateNavbarTabs();
+        }
+
+        // Function to update language display
+        function updateLanguageDisplay() {
+            languageDisplay.textContent = currentLanguage === 'en' ? 'English' : 'Hindi';
+        }
+
+        // Function to update navbar tabs based on the selected language
+        function updateNavbarTabs() {
+            const tabTexts = {
+                'en': ['Info', 'Research Papers', 'Gallery', 'Buy Now'],
+                'hi': ['जानकारी', 'अनुसंधान पत्रिकाएं', 'गैलरी', 'अब खरीदें']
+            };
+
+            brandName.textContent = currentLanguage === 'en' ? 'Kombu-Cha' : 'कोम्बु-चा';
+
+            sections.forEach((section, index) => {
+                const tab = navbarTabs.children[index].firstElementChild;
+                tab.textContent = tabTexts[currentLanguage][index];
+            });
+        }
+
+        // Function to show the selected section and hide others
+        function showSection(sectionId) {
+            currentSection = sectionId;
+            sections.forEach(section => {
+                const sectionElement = document.getElementById(section);
+                if (section === currentSection) {
+                    sectionElement.classList.remove('hidden');
+                } else {
+                    sectionElement.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initial setup
+        updateLanguageDisplay();
+        updateNavbarTabs();
+        showSection(currentSection);
+    </script>
+
+</body>
+
+</html>
