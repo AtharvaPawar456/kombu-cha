@@ -7,6 +7,10 @@
     <title>Kombu-Cha</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Include js-yaml library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
 </head>
 
 <body class="font-sans bg-gray-100 w-full">
@@ -108,9 +112,11 @@
                     <div>
                         <div class="my-4 font-bold text-4xl text-center">Kombucha Benefits for Your Health</div>
                         
-                        <div class="grid grid-cols-5 gap-4 text-justify">
+                        <div id="englishinfoView"  class="grid grid-cols-5 gap-4 text-justify">
 
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                            <!-- <div id="infoView" class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4"></div> -->
+
+                            <!-- <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
                                 <img src="static\images\info-imgs\Boosts gut health (1).jpeg" alt="image" 
                                      class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto">
                                 <div class="font-bold ">Boosts gut health</div>
@@ -198,7 +204,7 @@
                                 <div class="text-sm">
                                     Reduces blood pressure and balances cholesterol levels
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-span-4 p-4 text-2xl text-justify">
                             As a functional drink brimming with probiotics, nutrients, and antioxidants, kombucha confers an astounding range of health benefits. Science continues to reinforce traditional claims about improved immunity, reduced inflammation, disease prevention, and more. So raise a glass to this ancient but timeless elixir for boosting your overall wellness!
@@ -283,100 +289,7 @@
                     <div>
                         <div class="my-4 font-bold text-4xl text-center">कोम्बुचा आपके स्वास्थ्य के लिए लाभ</div>
                         
-                        <div class="grid grid-cols-5 gap-4 text-justify">
-
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\Boosts gut health (1).jpeg" alt="image" 
-                                     class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto">
-                                <div class="font-bold pt-4">पाचन स्वास्थ्य को बढ़ावा</div>
-                                <div class="text-sm">
-                                    पाचन, पोषण अवशेषण और प्रतिरक्षा को अच्छा बनाए रखने के लिए प्रोबायोटिक्स होते हैं
-                                </div>
-                            </div>
-                            
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\detoxifies-the-body-maleimage-more-positive-way-902119840.png" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto">
-                                <div class="font-bold pt-4">शरीर की स्वच्छीकरण</div>
-                                <div class="text-sm">
-                                    जिगर को समर्थन करने वाले एसिड नैसर्गिक शुद्धीकरण को बढ़ावा देते हैं
-                                </div>
-                            </div>
-
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\manages-inflammation.png" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
-                                <div class="font-bold pt-4">सूजन का प्रबंधन</div>
-                                <div class="text-sm">
-                                    शक्तिशाली एंटीऑक्सीडेंट्स आपत्तिकारी स्थितियों से निपट सकते हैं
-                                </div>
-                            </div>
-                            
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\Supports mental health.png" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
-                                <div class="font-bold pt-4">मानसिक स्वास्थ्य का समर्थन</div>
-                                <div class="text-sm">
-                                    पाचन-मस्तिष्क सम्बंध और तनाव प्रतिक्रियाएँ में प्रभाव
-                                </div>
-                            </div>
-
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\Aids weight loss.jpeg" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
-                                <div class="font-bold pt-4">वजन घटाने में मदद</div>
-                                <div class="text-sm">
-                                    पूर्णता को बढ़ावा देने, रक्त शर्करा को संतुलित करने और चर्बी जलाने का समर्थन करने में मदद करता है
-                                </div>
-                            </div>
-
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\Prevents disease.jpeg" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
-                                <div class="font-bold pt-4">रोग की रोकथाम</div>
-                                <div class="text-sm">
-                                    एंटीमाइक्रोबियल और एंटी-कैंसर गुण पूरे स्वास्थ्य की सुरक्षा कर सकते हैं
-                                </div>
-                            </div>
-
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\Slows aging (1).jpeg" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
-                                <div class="font-bold pt-4">आगे की ओर बढ़ावा</div>
-                                <div class="text-sm">
-                                    एंटीऑक्सीडेंट्स कोशिकाओं के स्तर पर बूट करते हैं
-                                </div>
-                            </div>
-
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\man-is-allergies-freemodulates-immune-responses-for-alleviation-of-allergy-symptoms-570661470.png" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
-                                <div class="font-bold pt-4">एलर्जी को आसानी से करना</div>
-                                <div class="text-sm">
-                                    एलर्जी के लक्षणों को कम करने के लिए प्रतिरक्षा प्रतिक्रियाएँ में सुधार
-                                </div>
-                            </div>
-
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\heart health.png" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
-                                <div class="font-bold pt-4">हृदय स्वास्थ्य का समर्थन</div>
-                                <div class="text-sm">
-                                    रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है
-                                </div>
-                            </div>
-                            
-                            <div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
-                                <img src="static\images\info-imgs\Type 2 Diabetes.jpeg" alt="image" 
-                                    class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
-                                <div class="font-bold pt-4">Type 2 डायबिटीज प्रबंधन में सहायक</div>
-                                <div class="text-sm">
-                                    रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है
-                                </div>
-                            </div>
-
-
-
+                        <div id="hindiinfoView"  class="grid grid-cols-5 gap-4 text-justify">
 
                         </div>
 
@@ -429,6 +342,100 @@
         </div>
     </div>
 
+    <script>
+        // Function to fetch and parse YAML data
+        async function fetchData() {
+            const response = await fetch('static/setup_files/data.yaml'); // Replace with the actual path to your YAML file
+            const data = await response.text();
+            return jsyaml.load(data);
+        }
+
+        // Function to render Info view content
+        async function renderInfoView() {
+            const englishinfoView = document.getElementById('englishinfoView');
+            const hindiinfoView = document.getElementById('hindiinfoView');
+
+            // Fetch YAML data
+            const data = await fetchData();
+
+            // Check if the data is available
+            if (data && data.english_view && data.english_view.info_view.benifits) {
+                const benifitsData = data.english_view.info_view.benifits;
+
+                //<div class="border border-gray-600 border-2 shadow-xl rounded p-4 my-4">
+                //    <img src="static\images\info-imgs\heart health.png" alt="image" 
+                //        class="h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md">
+                //    <div class="font-bold">Supports heart health</div>
+                //    <div class="text-sm">
+                //        Reduces blood pressure and balances cholesterol levels
+                //    </div>
+                //</div>
+                
+                // Iterate through benifitsData and create HTML elements
+                Object.entries(benifitsData).forEach(([key, value]) => {
+                    const container = document.createElement('div');
+                    container.className = 'border border-gray-600 border-2 shadow-xl rounded p-4 my-4';
+
+                    const img = document.createElement('img');
+                    img.src = value.img_path;
+                    img.alt = 'image';
+                    img.className = 'h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto';
+
+                    const title = document.createElement('div');
+                    title.className = 'font-bold mt-4';
+                    title.textContent = key;
+
+                    const desc = document.createElement('div');
+                    desc.className = 'text-sm';
+                    desc.textContent = value.desc;
+
+                    container.appendChild(img);
+                    container.appendChild(title);
+                    container.appendChild(desc);
+
+                    englishinfoView.appendChild(container);
+                });
+            } else {
+                // Handle case when data is not available
+                englishinfoView.innerHTML = '<p>No data available</p>';
+            }
+
+            // Check if the data is available
+            if (data && data.hindi_view && data.hindi_view.info_view.benifits) {
+                const benifitsData = data.hindi_view.info_view.benifits;
+
+                Object.entries(benifitsData).forEach(([key, value]) => {
+                    const container = document.createElement('div');
+                    container.className = 'border border-gray-600 border-2 shadow-xl rounded p-4 my-4';
+
+                    const img = document.createElement('img');
+                    img.src = value.img_path;
+                    img.alt = 'image';
+                    img.className = 'h-56 w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto';
+
+                    const title = document.createElement('div');
+                    title.className = 'font-bold mt-4';
+                    title.textContent = key;
+
+                    const desc = document.createElement('div');
+                    desc.className = 'text-sm';
+                    desc.textContent = value.desc;
+
+                    container.appendChild(img);
+                    container.appendChild(title);
+                    container.appendChild(desc);
+
+                    hindiinfoView.appendChild(container);
+                });
+            } else {
+                // Handle case when data is not available
+                hindiinfoView.innerHTML = '<p>No data available</p>';
+            }
+        }
+
+        // Initial setup
+        renderInfoView();
+    </script>
 
     <script>
         const toggleLanguageButton = document.getElementById('toggleLanguage');
