@@ -8,7 +8,6 @@ english_view:
   info_view:
 
     benifits:
-
       Boosts gut health: 
         img_path : static\images\info-imgs\Boosts gut health (1).jpeg
         desc : Contains probiotics to optimize digestion, nutrient absorption, and immunity
@@ -39,6 +38,80 @@ english_view:
       Aid in Type 2 Diabetes Management :
         img_path : static\images\info-imgs\Type 2 Diabetes.jpeg
         desc : Research suggests that kombucha may help to manage blood sugar levels, which could be beneficial for individuals with type 2 diabetes.
+
+    researchpaper:
+      7 Evidence-Based Health Benefits of Kombucha: 
+        https://www.healthline.com/nutrition/8-benefits-of-kombucha-tea#probiotics
+      Kombucha Health Benefits and Risks: 
+        https://www.webmd.com/diet/the-truth-about-kombucha
+      What is kombucha tea? Does it have any health benefits?: 
+        https://www.mayoclinic.org/healthy-lifestyle/consumer-health/expert-answers/kombucha-tea/faq-20058126
+      Is Kombucha Good for You?: 
+        https://health.clevelandclinic.org/what-are-kombuchas-health-benefits-and-how-much-can-you-safely-drink
+      kombucha - Fermented Beverage: 
+        https://www.britannica.com/topic/kombucha
+      What are the health benefits of kombucha?: 
+        https://www.medicalnewstoday.com/articles/319630
+
+      Kombucha Review: 
+        https://www.sciencedirect.com/science/article/abs/pii/S1878450X20301499
+      Understanding Kombucha Tea Fermentation - A Review:
+        https://ift.onlinelibrary.wiley.com/doi/full/10.1111/1750-3841.14068
+      Tea, Kombucha, and health - a review:
+        https://www.sciencedirect.com/science/article/abs/pii/S0963996900000673
+      Kombucha - a systematic review of the empirical evidence of human health benefit:
+        https://www.sciencedirect.com/science/article/pii/S1047279718307385
+      Yeast ecology of Kombucha fermentation:
+        https://www.sciencedirect.com/science/article/abs/pii/S0168160504001072
+      A review on health benefits of kombucha nutritional compounds and metabolites:
+        https://www.tandfonline.com/doi/full/10.1080/19476337.2017.1410499#abstract
+      Kombucha benefits, risks and regulatory frameworks - A review:
+        https://www.sciencedirect.com/science/article/pii/S2772753X23001090
+
+
+
+    
+    galleryimg:
+      img1: https://www.dxnindia.in/images/products/poster/DXN%20Kombucha%20Web.jpg
+      img2: https://m.media-amazon.com/images/I/51J1STW9djL.jpg
+      img3: https://www.dxnindia.in/images/products/category/food_beverages/FB387/di_Kombucha_back.jpg
+      img4: https://5.imimg.com/data5/ANDROID/Default/2023/6/312986653/II/CX/CB/104662018/product-jpeg.jpg
+      img5: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhNB7X774d3-0ydoYhNl0w_41CTVzI5D12uDObfduGhegbrXX0upPR9OkbeANi_cQv_0&usqp=CAU
+      img6: https://i.ytimg.com/vi/wkgwsqryFYI/hqdefault.jpg
+      img7: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRnaSkEJxxyt8A1pDXDfMQlGsl4Pa-0HKeZF00SxlKqWZC88nsp38tV5pPCQMkyaJJJc&usqp=CAU
+      img8: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxqcnt4IZPIGdeykrwLQPpdCzlGzG6FIKqCf1Hdc-WqZzkH3ZOZ3kSIqNHJy2mCCrVZUg&usqp=CAU
+
+    faqs:
+      "When should kombucha be consumed?":
+        "Kombucha can be consumed with or after meals. It may aid digestion and can be a good source of antioxidants.<br>However, if you are already consuming caffeine, it is advisable to avoid drinking kombucha in the evening as it contains caffeine."
+      "How is kombucha made?":
+        "Kombucha is made using black or green tea, sugar, and a special type of fermenter (SCOBY). This mixture is kept in a warm place for a few days to complete the fermentation process.<br>After fermentation, kombucha has a fresh and slightly tangy taste."
+      "Does kombucha contain alcohol?":
+        "Kombucha contains a very small amount of alcohol, which is produced during the fermentation process. Most commercial kombucha products have an alcohol content of less than 0.5%, which is within safe limits."
+      "How should kombucha be stored at home?":
+        "Kombucha can be stored in a cool place or in the refrigerator. Make sure the bottle is sealed to prevent ongoing fermentation and to maintain the quality of kombucha."
+      "What side effects can kombucha have?":
+        "Some people may experience gas, bloating, or digestive issues from kombucha, especially if consumed in excess.<br>Generally, consuming it in moderation reduces the likelihood of side effects."
+      "What does kombucha taste like?":
+        "Kombucha has a refreshing and slightly tangy taste due to the fermentation process.<br>The flavor can vary based on the type of tea used and the fermentation period."
+      "What is the shelf life of kombucha?":
+        "Commercially prepared kombucha typically has a shelf life of 3 to 6 months when stored properly.<br>Home-brewed kombucha may have a shorter shelf life and should be kept refrigerated."
+      "Does kombucha contain caffeine?":
+        "The caffeine content in kombucha depends on the type of tea used. Generally, kombucha made from green tea contains less caffeine, while kombucha made from black tea may have more caffeine."
+      "How much kombucha should be consumed?":
+        "Consuming 1 to 2 cups of kombucha per day is generally considered safe.<br>It is advisable to avoid excessive consumption, especially if you have any health concerns."
+      "What is the difference between kombucha and tea?":
+        "Both kombucha and tea are made from tea plants, but kombucha is fermented while tea is generally not fermented.<br>Due to fermentation, kombucha contains probiotics and acids, which are not present in tea."
+
+
+
+
+
+
+
+
+
+
 
 hindi_view:
   info_view:
@@ -75,3 +148,25 @@ hindi_view:
       Type 2 डायबिटीज प्रबंधन में सहायक :
         img_path : static\images\info-imgs\Type 2 Diabetes.jpeg
         desc : रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है.
+
+    faqs:
+      "कोम्बुचा का सेवन कब करना चाहिए?":
+        "कोम्बुचा का सेवन भोजन के साथ या उसके बाद किया जा सकता है। इससे पाचन में मदद मिलती है और यह एंटीऑक्सीडेंट्स का एक अच्छा स्रोत हो सकता है।<br>हालांकि, यदि आप पहले से ही कैफीन का सेवन कर रहे हैं, तो इसे शाम के समय पीने से बचें क्योंकि इसमें कैफीन होता है।"
+      "कोम्बुचा कैसे बनाई जाती है?":
+        "कोम्बुचा को काले या हरी चाय, चीनी, और एक विशेष प्रकार के किण्वक (SCOBY) के साथ तैयार किया जाता है। यह मिश्रण कुछ दिनों के लिए एक गर्म स्थान पर रखा जाता है ताकि किण्वन प्रक्रिया पूरी हो सके।<br>किण्वन के बाद, कोम्बुचा का स्वाद ताज़ा और कुछ खट्टा हो जाता है।"
+      "क्या कोम्बुचा में अल्कोहल होता है?":
+        "कोम्बुचा में बहुत ही कम मात्रा में अल्कोहल होता है, जो किण्वन प्रक्रिया के दौरान बनता है। अधिकांश व्यावसायिक कोम्बुचा उत्पादों में अल्कोहल की मात्रा 0.5% से कम होती है, जो सुरक्षित सीमा के भीतर है।"
+      "कोम्बुचा को घर पर कैसे स्टोर करें?":
+        "कोम्बुचा को ठंडे स्थान पर या रेफ्रिजरेटर में स्टोर किया जा सकता है। यह सुनिश्चित करें कि बोतल को सील किया गया हो ताकि किण्वन की प्रक्रिया जारी न रहे और कोम्बुचा की गुणवत्ता बनाए रखी जा सके।"
+      "कोम्बुचा के क्या साइड इफेक्ट्स हो सकते हैं?":
+        "कुछ लोगों को कोम्बुचा से गैस, सूजन, या पाचन संबंधी समस्याएं हो सकती हैं, खासकर यदि इसे अत्यधिक मात्रा में पीया जाए।<br>आमतौर पर, संयम में सेवन करने पर साइड इफेक्ट्स कम होते हैं।"
+      "कोम्बुचा का स्वाद कैसा होता है?":
+        "कोम्बुचा का स्वाद ताजगी से भरा और थोड़ा खट्टा होता है, जो किण्वन प्रक्रिया के कारण होता है।<br>स्वाद को चाय की किस्म और किण्वन की अवधि के आधार पर बदल सकते हैं।"
+      "कोम्बुचा की Shelf Life कितनी होती है?":
+        "व्यावसायिक रूप से तैयार की गई कोम्बुचा की Shelf Life आमतौर पर 3 से 6 महीने होती है, जब इसे सही तरीके से स्टोर किया जाए।<br>घर पर तैयार की गई कोम्बुचा की Shelf Life कम हो सकती है और इसे रेफ्रिजरेशन में रखा जाना चाहिए।"
+      "क्या कोम्बुचा में कैफीन होता है?":
+        "कोम्बुचा में चाय की किस्म के अनुसार कैफीन की मात्रा होती है। सामान्य तौर पर, ग्रीन टी से बनी कोम्बुचा में कम कैफीन होता है जबकि काले टी से बनी कोम्बुचा में अधिक कैफीन हो सकता है।"
+      "कोम्बुचा का सेवन कितना करना चाहिए?":
+        "दिन में 1 से 2 कप कोम्बुचा का सेवन सामान्यतः सुरक्षित माना जाता है।<br>अधिक मात्रा में सेवन से बचने की सलाह दी जाती है, विशेषकर यदि आप किसी स्वास्थ्य समस्या से पीड़ित हैं।"
+      "कोम्बुचा और चाय में क्या अंतर है?":
+        "कोम्बुचा और चाय दोनों ही चाय के पौधों से बनाए जाते हैं, लेकिन कोम्बुचा किण्वित होती है जबकि चाय सामान्यतः किण्वित नहीं होती।<br>किण्वन के कारण कोम्बुचा में प्रोबायोटिक्स और एसिड्स होते हैं, जो चाय में नहीं होते।"

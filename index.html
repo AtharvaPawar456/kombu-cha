@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kombu-Cha</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Include js-yaml library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
+    <style>
+        .text-wrap {
+            white-space: normal; /* Allows normal text wrapping */
+            word-break: break-word; /* Breaks words that are too long to fit */
+        }
+    </style>
 
 </head>
 
@@ -28,32 +35,50 @@
             <div class="flex space-x-4" id="englishNavbar">
                 
                 <a onclick="showSection('eninfoSection')" 
-                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">Info</a>
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">
+                    <i class="fa-solid fa-circle-info mr-1"></i>Info</a>
                 
                 <a onclick="showSection('enresearchSection')" 
-                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">Research Papers</a>
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">
+                    <i class="fa-solid fa-book-atlas mr-1"></i>Research Papers</a>
                 
                 <a onclick="showSection('engallerySection')" 
-                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">Gallery</a>
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">
+                    <i class="fa-solid fa-image mr-1"></i>Gallery</a>
                 
                 <a onclick="showSection('enbuynowSection')" 
                     class="text-black text-xl font-bold px-2 hover:underline hover:border-black hover:bg-yellow-300 border bg-yellow-400 rounded-md">Buy Now</a>
-            </div>
+            
+                <a onclick="showSection('enfaqSection')" 
+                    class="text-black text-xl font-bold px-2 hover:underline hover:border-black hover:bg-yellow-300 border bg-yellow-400 rounded-md">
+                    FAQ<i class="fa-solid fa-circle-question ml-1"></i></a>
+            
+                </div>
+                
 
             <!-- Hindi Navbar Tabs -->
             <div class="flex space-x-4 hidden" id="hindiNavbar">
                 
                 <a onclick="showSection('hiinfoSection')" 
-                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">जानकारी</a>
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">
+                    <i class="fa-solid fa-circle-info mr-1"></i>जानकारी</a>
                 
                 <a onclick="showSection('hiresearchSection')" 
-                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">अनुसंधान पत्रिकाएं</a>
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">
+                    <i class="fa-solid fa-book-atlas mr-1"></i>अनुसंधान पत्रिकाएं</a>
                 
                 <a onclick="showSection('higallerySection')" 
-                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">गैलरी</a>
+                    class="text-white text-xl font-bold px-2 hover:underline hover:text-yellow-300">
+                    <i class="fa-solid fa-image mr-1"></i>गैलरी</a>
                 
                 <a onclick="showSection('hibuynowSection')" 
                     class="text-black text-xl font-bold px-2 hover:underline hover:border-black hover:bg-yellow-300 border bg-yellow-400 rounded-md">अब खरीदें</a>
+            
+                <a onclick="showSection('hifaqSection')" 
+                    class="text-black text-xl font-bold px-2 hover:underline hover:border-black hover:bg-yellow-300 border bg-yellow-400 rounded-md">
+                    FAQ<i class="fa-solid fa-circle-question ml-1"></i></a>
+            
+            
             </div>
 
             <!-- Language Toggle Button -->
@@ -67,7 +92,7 @@
 
     <!-- Content Section -->
     <section class="container mx-auto mt-2 p-4">
-        <!-- Add Hindi content here -->
+        <!-- Add English content here -->
         <section id="englishSection" class="hidden">
             <!-- <h1 class="text-3xl text-center font-bold mb-4 mt-2">English Content Section</h1> -->
 
@@ -219,27 +244,37 @@
                 
             </section>
 
-
-
-
-
-
-
             <section id="enresearchSection" class="hidden">
-                <h1 class="text-3xl font-bold mb-4">Research Papers Section (English)</h1>
-                <!-- Add English Research Papers content here -->
+                <h1 class="text-3xl font-bold mb-4">Research Papers & Articals</h1>
             </section>
-
-            <section id="engallerySection" class="hidden">
-                <h1 class="text-3xl font-bold mb-4">Gallery Section (English)</h1>
+            
+            <section id="engallerySection" class="hidden grid grid-cols-4 gap-4">
+                <!-- <h1 class="text-3xl font-bold mb-4 ">Gallery</h1> -->
                 <!-- Add English Gallery content here -->
             </section>
-
+            
             <section id="enbuynowSection" class="hidden">
-                <h1 class="text-3xl font-bold mb-4">Buy Now Section (English)</h1>
+                <h1 class="text-3xl font-bold mb-4">Buy Now</h1>
+                <p>To make an Order Contact the Dealier mentioned below...
+                    or <b>Whatsapp to <i class="fa-brands fa-whatsapp"></i> +91 93206 68111</b>
+                </p>
                 <!-- Add English Buy Now content here -->
-            </section>
 
+                <h1 class="text-xl font-bold text-center mt-10">Contact:</h1>
+                <p class="text-md font-bold text-center pt-2">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    +91 93206 68111
+                </p>
+                <p class="text-md font-bold text-center pt-2">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    +91 93206 68119
+                </p>
+            </section>
+            
+            <section id="enfaqSection" class="hidden">
+                <h1 class="text-3xl font-bold mb-4">FAQ</h1>
+                <!-- Add English FAQ content here -->
+            </section>
         </section>
 
         <!-- Add Hindi content here -->
@@ -306,18 +341,37 @@
             </section>
         
             <section id="hiresearchSection" class="hidden">
-                <h1 class="text-3xl font-bold mb-4">अनुसंधान पत्रिकाएं खंड (हिन्दी)</h1>
+                <h1 class="text-3xl font-bold mb-4">Research Papers & Articals</h1>
                 <!-- Add Hindi Research Papers content here -->
             </section>
-        
-            <section id="higallerySection" class="hidden">
-                <h1 class="text-3xl font-bold mb-4">गैलरी खंड (हिन्दी)</h1>
+            
+            <section id="higallerySection" class="hidden grid grid-cols-4 gap-4">
+                <!-- <h1 class="text-3xl font-bold mb-4">गैलरी खंड (हिन्दी)</h1> -->
                 <!-- Add Hindi Gallery content here -->
             </section>
-        
+            
             <section id="hibuynowSection" class="hidden">
-                <h1 class="text-3xl font-bold mb-4">अब खरीदें खंड (हिन्दी)</h1>
+                <h1 class="text-3xl font-bold mb-4">अब खरीदें</h1>
+                <p>ऑर्डर करने के लिए नीचे दिए गए डीलर से संपर्क करें...
+                    या <b>व्हाट्सएप करें <i class="fa-brands fa-whatsapp"></i> +91 93206 68111</b>
+                </p>
                 <!-- Add Hindi Buy Now content here -->
+
+                <h1 class="text-xl font-bold text-center mt-10">Contact:</h1>
+                <p class="text-md font-bold text-center pt-2">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    +91 93206 68111
+                </p>
+                <p class="text-md font-bold text-center pt-2">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    +91 93206 68119
+                </p>
+            </section>
+            
+            
+            <section id="hifaqSection" class="hidden">
+                <h1 class="text-3xl font-bold mb-4">FAQ</h1>
+                <!-- Add Hindi FAQ content here -->
             </section>
         </section>
 
@@ -353,12 +407,19 @@
         // Function to render Info view content
         async function renderInfoView() {
             const englishinfoView = document.getElementById('englishinfoView');
+            const enresearchSectionTAG = document.getElementById('enresearchSection');
+            const engallerySectionTAG = document.getElementById('engallerySection');
+            const enfaqSectionTAG = document.getElementById('enfaqSection');
+            
             const hindiinfoView = document.getElementById('hindiinfoView');
-
+            const hiresearchSectionTAG = document.getElementById('hiresearchSection');
+            const higallerySectionTAG = document.getElementById('higallerySection');
+            const hifaqSectionTAG = document.getElementById('hifaqSection');
+            
             // Fetch YAML data
             const data = await fetchData();
 
-            // Check if the data is available
+            // Check if the eng benifits data is available
             if (data && data.english_view && data.english_view.info_view.benifits) {
                 const benifitsData = data.english_view.info_view.benifits;
 
@@ -400,6 +461,91 @@
                 englishinfoView.innerHTML = '<p>No data available</p>';
             }
 
+            // Check if the eng Research Paper data is available
+            if (data && data.english_view && data.english_view.info_view.researchpaper) {
+                const researchpaperData = data.english_view.info_view.researchpaper;
+
+                // Iterate through benifitsData and create HTML elements
+                Object.entries(researchpaperData).forEach(([key, value]) => {
+                    const container = document.createElement('div');
+                    container.className = 'border border-gray-600 border-2 shadow-xl rounded p-4 my-4';
+
+                    const title = document.createElement('div');
+                    title.className = 'font-bold';
+                    title.textContent = key;
+
+                    const rawlink = document.createElement('div');
+                    rawlink.className = 'text-sm mb-2 text-wrap';
+                    rawlink.textContent = value;
+                    
+                    const clicklink = document.createElement('a');
+                    clicklink.className = 'text-sm hover:text-indigo-500 hover:font-bold border p-2 rounded-md bg-indigo-500 text-white hover:bg-white';
+                    clicklink.textContent = "Open Link";
+                    clicklink.target = "_blank";
+                    clicklink.href = value;
+
+                    container.appendChild(title);
+                    container.appendChild(rawlink);
+                    container.appendChild(clicklink);
+
+                    enresearchSectionTAG.appendChild(container);
+                });
+            } else {
+                // Handle case when data is not available
+                enresearchSectionTAG.innerHTML = '<p>No data available</p>';
+            }
+
+            // Check if the eng Gallery Paper data is available
+            if (data && data.english_view && data.english_view.info_view.galleryimg) {
+                const galleryimgData = data.english_view.info_view.galleryimg;
+
+                Object.entries(galleryimgData).forEach(([key, value]) => {
+                    const container = document.createElement('div');
+                    container.className = 'border border-gray-600 border-2 shadow-xl rounded p-4 my-4 ';
+
+                    const img = document.createElement('img');
+                    img.src = value;
+                    img.alt = 'image';
+                    img.className = 'h-auto w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto';
+
+                    container.appendChild(img);
+                    engallerySectionTAG.appendChild(container);
+                });
+            } else {
+                // Handle case when data is not available
+                engallerySectionTAG.innerHTML = '<p>No data available</p>';
+            }
+
+            // Check if the eng FAQ Paper data is available
+            if (data && data.english_view && data.english_view.info_view.faqs) {
+                const faqsData = data.english_view.info_view.faqs;
+
+                // Iterate through benifitsData and create HTML elements
+                Object.entries(faqsData).forEach(([key, value]) => {
+                    const container = document.createElement('div');
+                    container.className = 'border border-gray-600 border-2 shadow-xl rounded p-4 my-4';
+
+                    const title = document.createElement('div');
+                    title.className = 'font-bold';
+                    title.textContent = key;
+
+                    const rawlink = document.createElement('div');
+                    rawlink.className = 'text-sm mb-2 text-wrap pl-4 pt-2';
+                    rawlink.innerHTML = value; // Use innerHTML to render content as HTML
+
+                    
+                    container.appendChild(title);
+                    container.appendChild(rawlink);
+                    enfaqSectionTAG.appendChild(container);
+                });
+            } else {
+                // Handle case when data is not available
+                enfaqSectionTAG.innerHTML = '<p>No data available</p>';
+            }
+
+
+
+
             // Check if the data is available
             if (data && data.hindi_view && data.hindi_view.info_view.benifits) {
                 const benifitsData = data.hindi_view.info_view.benifits;
@@ -431,6 +577,89 @@
                 // Handle case when data is not available
                 hindiinfoView.innerHTML = '<p>No data available</p>';
             }
+
+            // Check if the hi Research Paper data is available
+            if (data && data.english_view && data.english_view.info_view.researchpaper) {
+                const researchpaperData = data.english_view.info_view.researchpaper;
+
+                // Iterate through benifitsData and create HTML elements
+                Object.entries(researchpaperData).forEach(([key, value]) => {
+                    const container = document.createElement('div');
+                    container.className = 'border border-gray-600 border-2 shadow-xl rounded p-4 my-4';
+
+                    const title = document.createElement('div');
+                    title.className = 'font-bold';
+                    title.textContent = key;
+
+                    const rawlink = document.createElement('div');
+                    rawlink.className = 'text-sm mb-2 text-wrap';
+                    rawlink.textContent = value;
+                    
+                    const clicklink = document.createElement('a');
+                    clicklink.className = 'text-sm hover:text-indigo-500 hover:font-bold border p-2 rounded-md bg-indigo-500 text-white hover:bg-white';
+                    clicklink.textContent = "Open Link";
+                    clicklink.target = "_blank";
+                    clicklink.href = value;
+
+                    container.appendChild(title);
+                    container.appendChild(rawlink);
+                    container.appendChild(clicklink);
+
+                    hiresearchSectionTAG.appendChild(container);
+                });
+            } else {
+                // Handle case when data is not available
+                hiresearchSectionTAG.innerHTML = '<p>No data available</p>';
+            }
+
+            // Check if the hi Gallery Paper data is available
+            if (data && data.english_view && data.english_view.info_view.galleryimg) {
+                const galleryimgData = data.english_view.info_view.galleryimg;
+
+                Object.entries(galleryimgData).forEach(([key, value]) => {
+                    const container = document.createElement('div');
+                    container.className = 'border border-gray-600 border-2 shadow-xl rounded p-4 my-4 ';
+
+                    const img = document.createElement('img');
+                    img.src = value;
+                    img.alt = 'image';
+                    img.className = 'h-auto w-full object-cover border border-2 border-gray-400 rounded-xl shadow-md my-auto';
+
+                    container.appendChild(img);
+                    higallerySectionTAG.appendChild(container);
+                });
+            } else {
+                // Handle case when data is not available
+                higallerySectionTAG.innerHTML = '<p>No data available</p>';
+            }
+
+            // Check if the hi FAQ Paper data is available
+            if (data && data.hindi_view && data.hindi_view.info_view.faqs) {
+                const faqsData = data.hindi_view.info_view.faqs;
+
+                // Iterate through benifitsData and create HTML elements
+                Object.entries(faqsData).forEach(([key, value]) => {
+                    const container = document.createElement('div');
+                    container.className = 'border border-gray-600 border-2 shadow-xl rounded p-4 my-4';
+
+                    const title = document.createElement('div');
+                    title.className = 'font-bold';
+                    title.textContent = key;
+
+                    const rawlink = document.createElement('div');
+                    rawlink.className = 'text-sm mb-2 text-wrap pl-4 pt-2';
+                    rawlink.innerHTML = value; // Use innerHTML to render content as HTML
+
+                    
+                    container.appendChild(title);
+                    container.appendChild(rawlink);
+                    hifaqSectionTAG.appendChild(container);
+                });
+            } else {
+                // Handle case when data is not available
+                hifaqSectionTAG.innerHTML = '<p>No data available</p>';
+            }
+
         }
 
         // Initial setup
@@ -447,8 +676,8 @@
         const hindiNavbar = document.getElementById('hindiNavbar');
 
         const sections = [
-            'eninfoSection', 'enresearchSection', 'engallerySection', 'enbuynowSection',
-            'hiinfoSection', 'hiresearchSection', 'higallerySection', 'hibuynowSection'
+            'eninfoSection', 'enresearchSection', 'engallerySection', 'enbuynowSection', 'enfaqSection',
+            'hiinfoSection', 'hiresearchSection', 'higallerySection', 'hibuynowSection', 'hifaqSection'
         ];
         
         let currentLanguage = 'en'; // Default language is English
@@ -498,8 +727,6 @@
 
     </script>
 
-
     <script src="static/setup_files/tailwindcss.js"></script>
 </body>
-
 </html>
